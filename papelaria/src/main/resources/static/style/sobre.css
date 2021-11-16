@@ -1,0 +1,28 @@
+/*
+ * Cover
+ */
+ .cover {
+    padding: 0 1.5rem;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    margin: 0 auto;
+  }
+
+  .cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+  }
+
+  body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+  .cover-container {
+    max-width: 42em;
+  }

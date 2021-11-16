@@ -35,7 +35,7 @@
                         <a class="nav-link " href="sobre.html">Sobre</a>
                     </li>
                 </ul>
-                <div style="margin-left: auto; margin-right: 0; padding-right: 1%;">
+                <div style="display: flex; margin-left: auto; margin-right: 0; padding-right: 1%;">
                     <!-- Button trigger modal -->
                     <button type="button" id="userElement" class="btn btn-secondary" onclick="toggleModal()">
                         Login
@@ -66,16 +66,16 @@
                     <div class="modal-body">
                         <form action="teste" method="post">
                             <div class="mb-3 row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Usuário</label>
+                                <label for="staticEmail" class="col-sm-2 col-form-label">E-Mail</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    <input type="email" class="form-control" id="loginEmail"
                                         placeholder="name@example.com">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Senha</label>
                                 <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword">
+                                    <input type="password" class="form-control" id="loginPassword">
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -157,14 +157,14 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal"
                         onclick="toggleModal('cadastro')">Fechar</button>
-                    <button type="button" onclick="authUser()" class="btn btn-primary">Entrar</button>
+                    <button type="button" onclick="createUser()" class="btn btn-primary">Entrar</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
     <!-- Modal Logout -->
-
+    <div id="containerProdutos" class="grid-container"></div>
     <footer>
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Papelaria</a>
@@ -196,6 +196,7 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script src="js/global.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
